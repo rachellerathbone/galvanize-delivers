@@ -1,0 +1,86 @@
+html {
+  font-family: 'Didot', 'GillSans', 'Calibri', Trebuchet, sans-serif;
+}
+
+.nav-wrapper, footer.page-footer {
+  background-color: #1D160E;
+}
+
+nav .brand-logo {
+  padding-left: 1%;
+  font-size: 1.9rem
+}
+
+a.brand-logo, a {
+  color: #E5AE6F;
+}
+
+nav ul a {
+  font-size: 1.2rem;
+}
+
+header {
+  background-image: url('../img/restaurant.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: transparent;
+  height: 800px;
+  justify-content: center;
+  flex-direction: column;
+  color: #E5AE6F;
+}
+
+header > a {
+  margin-top: 3%;
+}
+
+h1 {
+  font-size: 596%;
+  font-weight: 800;
+  text-shadow: 6px 0px 0px black;
+  font-family: 'Snell Roundhand', 'Din', Helvetica;
+}
+
+a.waves-effect {
+  background-color: #40301F;
+  color: #E5AE6F;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+ul > li > a {
+  color: #E5AE6F;
+}
+
+main {
+  margin-top: 4%;
+}
+
+i, span.landing {
+  color: #40301F;
+  font-size: 35px;
+}
+
+span.landing {
+  margin-left: 20px;
+}
+
+.paragraphs {
+  font-size: 130%;
+  padding-bottom: 10%;
+}
+
+th {
+  font-weight: bold;
+}
+
+.btn, .btn-large {
+  background-color: #40301F;
+  color: #E5AE6F;
+  border-radius: 3%;
+}
+
+footer.page-footer {
+  background-color: #1D160E;
+}
