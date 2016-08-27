@@ -79,6 +79,14 @@ th {
   background-color: #40301F;
   color: #E5AE6F;
   border-radius: 3%;
+  margin-top: 20px;
+}
+
+#order-confirmation {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+  color: #1D160E;
 }
 
 footer.page-footer {

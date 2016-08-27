@@ -28,6 +28,7 @@
   <nav>
     <div class="nav-wrapper">
       <a href="http://www.galvanize.com/" class="brand-logo">Galvanize Delivers</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="index.html" style="color: #E5AE6F;">Home</a></li>
       </ul>
@@ -160,27 +161,28 @@
             <div class="row">
               <div class="input-field">
                 <i class="material-icons prefix">account_circle</i>
-                <input type="text" id="name" class="validate">
-                <label for="icon_prefix">Name</label>
+                <input type="text" tabindex="1" id="name" name="name" class="validate" required>
+                <label for="name">Name</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field">
                 <i class="material-icons prefix">phone</i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Telephone</label>
+                <input type="tel" tabindex="2" id="telephone" name="phone" pattern="^\d{10}$" required>
+                <label for="phone">Telephone</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field">
                 <i class="material-icons prefix">home</i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Address</label>
+                <input type="text" tabindex="3" id="address" name="address" class="validate" required>
+                <label for="address">Address</label>
               </div>
             </div>
             <div class="center-align">
               <button class="btn waves-effect waves-light" type="submit" name="action">PLACE ORDER</button>
             </div>
+            <h6 id="order-confirmation"></h6>
           </form>
 
         </div>

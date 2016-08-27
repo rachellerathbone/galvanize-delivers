@@ -10,6 +10,10 @@ $(function() {
   $('#details-form').on('submit', function(e) {
     e.preventDefault();
     console.log($('#name').val());
+    console.log($('#telephone').val());
+    console.log($('#address').val());
+
+    $('#order-confirmation').text('Your order has been placed successfully.');
   });
-  
+
 });
