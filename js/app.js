@@ -1,3 +1,8 @@
+// set text of last cell to the price of the card clicked
+var subtotal = 0;
+var tax = 0;
+//var total = 0;
+
 $(function() {
   $('.card-action').on('click', function(e) {
     e.preventDefault();
@@ -17,26 +22,31 @@ $(function() {
 
     // append rows to the body of the table
     $('#order-table tbody').append(tr);//.append($td);
+
+    var str = $(td3).html();
+    var res = str.substring(1, str.length);
+    subtotal += parseFloat(res);
+    var newSubtotal = subtotal.toFixed(2);
+    tax = parseFloat(res);
+    //total = parseFloat(res);
+    var total = (subtotal + tax).toFixed(2);
+
+    tax = (newSubtotal * 0.09).toFixed(2);
+
+    $('#subtotal').html(newSubtotal);
+    $('#tax').html(tax);
+    $('#total').html(total);
+
+    return;
   });
 });
-
- //  $('.card-action').on('click', function(e) {
- //    e.preventDefault();
- //    var $price = $('.price').text()
- //     $('#subtotal').text($price);
- //   });
- // });
-
 
 
 $(function() {
   $('#details-form').on('submit', function(e) {
     e.preventDefault();
-    console.log($('#name').val());
-    console.log($('#telephone').val());
-    console.log($('#address').val());
-
-    $('#order-confirmation').text('Your order has been placed successfully.');
+    // $('#order-confirmation').text('Your order has been placed successfully.');
+    var $toastContent = $('<span>Your order was placed successfully.</span>');
+    Materialize.toast($toastContent, 5000);
   });
-
 });
