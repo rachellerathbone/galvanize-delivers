@@ -90,6 +90,10 @@ th {
   border-radius: 3%;
 }
 
+.btn:hover, .btn-large:hover {
+    background-color: #1D160E;
+}
+
 h4 {
     font-size: 1.95rem;
     line-height: 110%;
