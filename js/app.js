@@ -4,6 +4,9 @@ var tax = 0;
 //var total = 0;
 
 $(function() {
+  // Initialize collapse button
+  $(".button-collapse").sideNav();
+
   $('.card-action').on('click', function(e) {
     e.preventDefault();
     // create row with 3 cells
